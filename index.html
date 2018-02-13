@@ -17,18 +17,37 @@
             </a-entity>
             
             <a-assets>
-                <img id="mrbudiImage" src="images/venice.jpeg">
+                <img id="backbutton-image" src="images/back.png"></img>
+                <img id="JamirImage" src="images/venice.jpeg">
+                 <img id="veniceSign" src="images/venice-sign.jpeg">
                 
                 <video 
-					muted
-					id="elephantVideo" 
-					src="videos/elephants360.mp4"
-					autoplay loop="true"
+					
+					id="spacevideo" 
+					src="videos/edge_of_space-360.mp4"
+					autoplay loop muted="true"
 				></video>
             </a-assets>
+            <a-entity id="backbutton" visible="true">
+                <a-<img src="#backbutton-image"></img>
+                
+                
+                
+            </a-entity>
+            
             
             <a-entity id="homepage" visible="true">
-                <a-sky src="#elephantVideo"></a-sky>
+                <a-sky src="#spacevideo"></a-sky>
+                <a-image
+                src="#veniceSign"
+                position="0 2 -2"
+                width="1,5"
+                height="1.5"
+                onclick="travelToVenice"
+                </a-entity>
+                
+                <a-entity id="scene2" visible="false">
+                <a-sky src="#JamirImage"></a-sky>
             </a-entity>
         </a-scene>
     </body>
